@@ -1,0 +1,46 @@
+body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#loading-bar {
+    background:rgba(22,22,22,0.35);
+    width: 15%;
+    height: 3%;
+    position: absolute;
+    margin-top: 47%;
+    margin-left: 42.5%;
+    padding:1px;
+}
+
+#loading-animation {
+    width: 0%;
+    height: 100%;
+    background:rgba(80,135,177,0.9);
+}
+
+#loading-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: sans-serif;
+  font-weight:0;
+  font-size:18px;
+  letter-spacing:0.1em;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  color:white;
+  width:100%;
+  opacity:0.8;
+}

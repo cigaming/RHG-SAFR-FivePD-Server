@@ -1,0 +1,82 @@
+:root {
+  --menu-header-color: #0984e3;
+  --menu-header-text-color: white;
+  --menu-header-font-size: 20px;
+  --menu-body-color: white;
+  --menu-button-color: #636e72;
+  --menu-button-hovered-color: #2d3436;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.k9_menu_base {
+  position: absolute;
+  width: 350px;
+  max-height: 550px;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.k9_menu_header {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--menu-header-color);
+  border-radius: 10px 10px 0px 0px;
+  font-size: var(--menu-header-font-size);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.k9_menu_body {
+  background-color: var(--menu-body-color);
+  padding: 1px;
+}
+
+.k9_button {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  background-color: var(--menu-button-color);
+  margin: 5px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.k9_button_hovered {
+  background-color: var(--menu-button-hovered-color);
+}
+
+.k9_button_submenu_icon {
+  font-size: 100%; 
+  right: 10px;
+  position: absolute;
+}
+
+.k9_slider_icon_right {
+  font-size: 150%; 
+  right: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.k9_slider_icon_left {
+  font-size: 150%; 
+  left: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

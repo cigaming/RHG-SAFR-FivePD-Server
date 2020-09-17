@@ -1,0 +1,82 @@
+------------------------------------------------------------
+------------------------------------------------------------
+----------------------- CREDITS ----------------------------
+------------ Made by: BlackWolfie and SneakGaming ----------
+------------------------------------------------------------
+------------------------------------------------------------
+
+##Installation
+
+1. Open Mysql run the following SQL:
+
+ALTER TABLE `owned_vehicles`
+ADD COLUMN `modelname` VARCHAR(250) NULL;
+
+2. esx_vehicleshop or a custom one if you are using it.
+
+3. Open client/main.lua and
+Find
+TriggerServerEvent('esx_vehicleshop:setVehicleOwned', vehicleProps)
+
+Change it to:
+TriggerServerEvent('esx_vehicleshop:setVehicleOwned', vehicleProps,vehicleData)
+
+Note: there are 2 places where this is used. do this for both places!
+
+4. Open server/main.lua and find "AddEventHandler('esx_vehicleshop:setVehicleOwned', function (vehicleProps)"
+change this to "AddEventHandler('esx_vehicleshop:setVehicleOwned', function (vehicleProps,vehicleData)"
+
+Next find:
+
+MySQL.Async.execute(
+    'INSERT INTO owned_vehicles (vehicle, owner, plate) VALUES (@vehicle, @owner, @plate)',
+    {
+      ['@vehicle'] = json.encode(vehicleProps),
+      ['@owner']   = xPlayer.identifier,
+      ['@plate'] = vehicleProps.plate
+    },
+
+Change to:
+
+MySQL.Async.execute(
+    'INSERT INTO owned_vehicles (vehicle, owner, plate, modelname) VALUES (@vehicle, @owner, @plate, @modelname)',
+    {
+      ['@vehicle'] = json.encode(vehicleProps),
+      ['@owner']   = xPlayer.identifier,
+      ['@plate'] = vehicleProps.plate,
+      ['@modelname'] = vehicleData.model
+    },
+
+Next find:
+AddEventHandler('esx_vehicleshop:setVehicleOwnedPlayerId', function (playerId, vehicleProps)
+
+Change to:
+AddEventHandler('esx_vehicleshop:setVehicleOwnedPlayerId', function (playerId, vehicleProps,vehicleData)
+
+Then find:
+MySQL.Async.execute(
+    'INSERT INTO owned_vehicles (vehicle, owner,plate) VALUES (@vehicle, @owner,@plate)',
+    {
+      ['@vehicle'] = json.encode(vehicleProps),
+      ['@owner']   = xPlayer.identifier,
+      ['@plate'] = vehicleProps.plate
+    },
+
+Change to:
+MySQL.Async.execute(
+    'INSERT INTO owned_vehicles (vehicle, owner, plate, modelname) VALUES (@vehicle, @owner, @plate, @modelname)',
+    {
+      ['@vehicle'] = json.encode(vehicleProps),
+      ['@owner']   = xPlayer.identifier,
+      ['@plate'] = vehicleProps.plate,
+      ['@modelname'] = vehicleDatal.model
+    },
+
+5. Put esx_police_cad in your resource folder.
+
+6. Edit server.cfg and add
+start esx_police_cad
+
+7. Restart server.
+
+8. Enter a police vehicle and press " - " to open the CAD system

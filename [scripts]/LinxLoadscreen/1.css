@@ -1,0 +1,155 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color:white;
+	overflow:hidden;
+	font-weight: bold;
+}
+.video-background{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -99;
+}
+
+.Button {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 13px 31px;
+    margin-right: 6px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+.Button:hover {
+	background-color:white;
+	color:black;
+}
+.Button:active {
+	position:relative;
+	top:1px;
+}
+.Shape{
+    clip-path: polygon(0 0, 75% 0, 55% 100%, 0% 100%);
+    position: fixed;
+    height: 100%;width: 100%;
+}
+.ShapeStyle{
+    background-color: #20232d;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    filter: opacity(55%)
+    ;z-index: -1;
+}
+
+.letni
+{
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    bottom: 10%;
+
+    z-index: 5;
+
+    color: #fff;
+
+    font-family: "Segoe UI";
+}
+
+.letni p
+{
+    font-size: 22px;
+
+    margin-left: 3px;
+
+    margin-top: 0px;
+}
+
+.letni h2, .letni h3
+{
+    font-family: BankGothic;
+
+    text-transform: uppercase;
+
+    font-size: 50px;
+
+    margin: 0px;
+
+    display: inline-block;
+}
+
+.loadbar
+{
+    width: 250px;
+    background-color: rgba(238, 238, 238, .4);
+    height: 20px;
+
+    margin-left: 2px;
+    margin-right: 3px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    display: block;
+}
+
+.thingy
+{
+    width: 10%;
+    background-color: rgba(0, 191, 255, .6);
+    height: 20px;
+
+    position: absolute;
+    left: 10%;
+}
+
+@keyframes blink {
+    0% {
+      opacity: .2;
+    }
+
+    20% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: .2;
+    }
+}
+
+.loading span {
+    animation-name: blink;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+.loading span:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.loading span:nth-child(3) {
+    animation-delay: .4s;
+}

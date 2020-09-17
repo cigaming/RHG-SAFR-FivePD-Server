@@ -1,0 +1,1 @@
+INSERT INTO `items` (`id`, `name`, `label`, `weight`, `rare`, `can_remove`) VALUES (2010, 'armor', 'Bulletproof vest', -1, 0, 1);

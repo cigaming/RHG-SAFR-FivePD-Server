@@ -1,0 +1,5 @@
+AddEventHandler("playerSpawned", function(spawn)
+TriggerEvent("chatMessage", "", { 255, 0, 0 }, "Welcome to RHG San Andreas First Response Server")
+TriggerEvent("chatMessage", "", { 255, 0, 0 }, "Discord https://discord.gg/jaHXFFV")
+TriggerEvent("chatMessage", "", { 255, 0, 0 }, "STAY IN CHARACTER AT ALL TIMES")
+end)

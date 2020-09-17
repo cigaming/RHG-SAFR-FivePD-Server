@@ -1,0 +1,316 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 16px;
+    color: #797b7f;
+    font-family: "Roboto";
+    background: transparent;
+}
+
+.police-cad-main-wrapper {
+    display: block;
+    position: absolute;
+    top: 16%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,0%);
+    width: 80%;
+    height: 70vh;
+    display: none;
+}
+
+.police-cad-inner-wrapper {
+    max-width: 100%;
+    background: #2e3136;
+    width: 100%;
+    height: 70vh;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    position: relative;
+    display: block;
+    align-items: stretch;
+    opacity: 0.9;
+}
+
+.police-cad-inner-main {
+    display: flex;
+    align-items: stretch;
+    bottom: 0;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    left: 0;
+}
+
+.police-cad-header h4 {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.police-cad-close {
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+    transition: .4s ease all;
+}
+
+.police-cad-close:hover {
+    color: #8d0e0e;
+}
+
+.police-cad-header {
+    background: #202225;
+    width: 100%;
+    padding: 15px;
+    z-index: 99;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.police-cad-content-right {
+    background: #36393f;
+    width: 100%;
+    padding: 15px;
+    display: inline-block;
+    float: right;
+    opacity: 0.9;
+    position: relative;
+}
+
+.police-cad-left-sidebar {
+    width: 24%;
+    bottom: 0;
+    background: #2f3136;
+    padding: 15px;
+    display: inline-block;
+    float: left;
+}
+
+.police-cad-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin: -15px;
+}
+
+.active{
+    background-color: #2c362f;
+}
+
+.police-cad-menu li,
+.police-cad-menu li a {
+
+}
+
+.police-cad-menu li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #36393f;
+    transition: .3s ease all;
+    cursor: pointer;
+
+}
+
+.police-cad-menu li:hover {
+    background: #3d4147;
+    border-bottom: 1px solid #3d4147;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16);
+}
+
+.police-cad-menu li:last-child {
+    border-bottom: 1px solid transparent;
+}
+
+.police-cad-listings {
+    width: 100%;
+    border: 0;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.police-cad-listings tr,
+.police-cad-listings td {
+    border: 0;
+}
+
+.police-cad-listings tbody tr td:first-child {
+    width: 80px;
+}
+
+.police-cad-listings tbody tr td:last-child {
+    width: 80px;
+}
+
+.police-cad-listings tbody tr td {
+    padding: 10px 5px;
+    background: #2a2c31;
+    transition: .3s ease all;
+}
+
+.police-cad-listings thead tr {
+    background: #25272b;
+}
+
+.police-cad-listings tbody tr:hover td {
+    background: #3d4147;
+    z-index: 999;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16);
+}
+
+.police-cad-buy {
+    padding: 2px 18px;
+    background: #7289da;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.police-cad-buy:hover {
+    background: #4a64bc;
+}
+
+.plate-input-box{
+    padding-top:60px;
+}
+
+.input{
+    width:100%;
+    padding-top:10px;
+    margin-top: 20px;
+}
+
+.search-button{
+    color: #ffffff;
+    background: #1f1f21;
+    height: 50px;
+    position: absolute;
+    border-radius: 4px;
+    bottom: 15px;
+    cursor: pointer;
+    width: calc(100% - 30px);
+}
+
+.police-logo{
+    max-height: 30%;
+    position: absolute;
+    bottom: 15px;
+    padding-left:  2%;
+}
+
+.page-wrapper{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.page{
+    position: absolute;
+    top:0;
+    bottom:0;
+}
+
+
+/*Search Civilian Start*/
+
+.all-found-users {
+    width: 100%;
+    border: 0;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.all-found-users tr,
+.all-found-users td {
+    border: 0;
+}
+
+.all-found-users tbody tr td:first-child {
+    width: 80px;
+}
+
+.all-found-users tbody tr td:last-child {
+    width: 80px;
+}
+
+.all-found-users tbody tr td {
+    padding: 10px 5px;
+    background: #2a2c31;
+    transition: .3s ease all;
+}
+
+.all-found-users thead tr {
+    background: #25272b;
+}
+
+.all-found-users tbody tr:hover td {
+    background: #3d4147;
+    z-index: 999;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16);
+}
+
+.all-found-users{
+    margin-top:20px;
+}
+#search-civilian,
+.civilian-details{
+    display: none;
+}
+
+.modal-add-record{
+    display: none;
+}
+
+.modal-add-record{
+    position: absolute;
+    top:0;
+    left:25%;
+    right:25%;
+    width: 75%;
+    bottom:0;
+    background:rgba(0,0,0,0.6);
+}
+
+
+.criminal-records {
+    width: 100%;
+    border: 0;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.criminal-records tr,
+.criminal-records td {
+    border: 0;
+}
+
+.criminal-records tbody tr td:first-child {
+    width: 80px;
+}
+
+.criminal-records tbody tr td:last-child {
+    width: 80px;
+}
+
+.criminal-records tbody tr td {
+    padding: 10px 5px;
+    background: #2a2c31;
+    transition: .3s ease all;
+}
+
+.criminal-records thead tr {
+    background: #25272b;
+}
+
+.criminal-records tbody tr:hover td {
+    background: #3d4147;
+    z-index: 999;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16);
+}
+
+.criminal-records{
+    margin-top:20px;
+}
+/*Search Civilian End*/

@@ -1,0 +1,139 @@
+<!-- Found on: https://modit.store -->
+<!-- ModFreakz Discord: https://discord.gg/4S7FcFs -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		body {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			display: none;
+		}
+
+		progress {
+		  /* Reset the default appearance */
+		  -webkit-appearance: none;
+		  appearance: none;
+
+		  position: absolute;
+		  left: calc(50% - 170px);
+		  top: 80%;
+
+		  width: 340px;
+		  height: 30px;
+		}
+		progress::-webkit-progress-bar {
+		  background-color: rgba(45,45,45,0.5);
+		  border-radius: 5px;
+		  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), inset 0 -5px 10px rgba(0, 0, 0, 0.5);
+		}
+		progress::-webkit-progress-value {
+		  background-image:
+		   -webkit-linear-gradient(-45deg,transparent 33%, rgba(0, 0, 0, .1) 33%,rgba(0,0, 0, .1) 66%, transparent 66%),
+		   -webkit-linear-gradient(top,rgba(255, 255, 255, .25),rgba(0, 0, 0, .25)),
+		   -webkit-linear-gradient(left, #09c, #f44);
+
+		  border-radius: 5px; 
+		  background-size: 35px 30px, 100% 100%, 100% 100%;
+		  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), inset 0 -5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		#progressbarText {
+		  position: absolute;
+		  left: calc(50% - 170px);
+		  top: calc(80% + 2px);
+
+		  width: 340px;
+		  height: 30px;
+
+			text-align: center;
+			color: rgba(255,255,255,1.0);
+			text-shadow: 1px 2px rgba(0,0,0,0.5),-1px -1px rgba(0,0,0,0.5),-1px 1px rgba(0,0,0,0.5),1px -1px rgba(0,0,0,0.5);
+
+			opacity: 0.5;
+
+			margin: 0px 0px 0px 0px;
+	    font-family: Marvel;
+	    font-size: 26px;
+		}
+
+		@font-face {
+		  font-family:"Marvel";
+		  src: url("MarvelRegular-Dj83.TTF") format("truetype");
+		}
+
+	</style>
+
+</head>
+<body id="body">
+<progress id="progressbar" value="0" max="100"></progress>
+<div id="progressbarText"></div>
+
+<script>
+var doDisplay = false;
+
+window.addEventListener('message', function(event) {
+	if (event.data.message == "OpenUI") {
+    var timeout = 0;
+    if (doDisplay == true) {
+      doDisplay = false;
+      timeout = 100;
+    }
+
+    setTimeout(function() {
+      doDisplay = true
+      $("#body").show();
+
+      var start = new Date();
+      var item = event.data;    
+      var maxTime = (item.timer);
+      var text = item.text.toUpperCase();
+      var timeoutVal = Math.floor(maxTime/100);
+      animateUpdate();
+
+      $('#progressbarText').text(text);
+
+      function updateProgress(percentage) {
+        $("#progressbar").val(Math.floor(percentage)); 
+        progressbarText.style.opacity = (percentage / 100.0); 
+      }
+
+      function animateUpdate() {
+        var now = new Date();
+        var timeDiff = now.getTime() - start.getTime();
+        var perc = Math.round((timeDiff/maxTime)*100);
+
+        if (perc <= 100 && doDisplay === true) {
+          updateProgress(perc);
+          setTimeout(animateUpdate, timeoutVal);
+        } 
+
+        else 
+        {
+          doDisplay = false;
+          $("#body").hide();
+          progressbarText.style.opacity = 0.0; 
+        }
+      }
+    },timeout)
+  } 
+  else 
+  {
+    doDisplay = false;
+    $("#body").hide();
+    progressbarText.style.opacity = 0.0; 
+  }
+})
+
+</script>
+
+</body>
+</html>

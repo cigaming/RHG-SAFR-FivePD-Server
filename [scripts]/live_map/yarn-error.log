@@ -1,0 +1,67 @@
+Arguments: 
+  M:\Cfx\RHG-30120-ES\FXServer.exe M:\Cfx\RHG-30120-ES\resources\[system]\[builders]\yarn\yarn_cli.js install
+
+PATH: 
+  C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;M:\_wamp\bin\php\php7.4.0
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  12.13.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: write EIO
+      at afterWriteDispatched (internal/stream_base_commons.js:150:25)
+      at writeGeneric (internal/stream_base_commons.js:141:3)
+      at WriteStream.Socket._writeGeneric (net.js:770:11)
+      at WriteStream.Socket._write (net.js:782:8)
+      at doWrite (_stream_writable.js:431:12)
+      at writeOrBuffer (_stream_writable.js:415:5)
+      at WriteStream.Writable.write (_stream_writable.js:305:11)
+      at writeOnNthLine (M:\Cfx\RHG-30120-ES\resources\[system]\[builders]\yarn\yarn_cli.js:48940:12)
+      at Spinner.render (M:\Cfx\RHG-30120-ES\resources\[system]\[builders]\yarn\yarn_cli.js:96696:48)
+      at Spinner.start (M:\Cfx\RHG-30120-ES\resources\[system]\[builders]\yarn\yarn_cli.js:96683:10)
+
+npm manifest: 
+  {
+      "name": "fivem-live_map",
+      "version": "2.3.4",
+      "description": "The FiveM resource to get Havoc's LiveMap working#",
+      "main": "index.js",
+      "scripts": {
+          "lint": "eslint ./src/**/*",
+          "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "repository": {
+          "type": "git",
+          "url": "git+https://github.com/TGRHavoc/live_map.git"
+      },
+      "author": "Havoc",
+      "license": "GPL-3.0",
+      "bugs": {
+          "url": "https://github.com/TGRHavoc/live_map/issues"
+      },
+      "homepage": "https://github.com/TGRHavoc/live_map#readme",
+      "dependencies": {
+          "koa": "^2.7.0",
+          "koa-body": "^4.1.0",
+          "koa-router": "^7.4.0",
+          "simple-console-logger": "^2.0.2",
+          "socket.io": "^2.2.0",
+          "webpack": "^4.33.0",
+          "ws": "^7.0.0"
+      },
+      "devDependencies": {
+          "eslint": "^5.16.0"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

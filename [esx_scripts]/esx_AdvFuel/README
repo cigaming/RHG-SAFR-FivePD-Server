@@ -1,0 +1,22 @@
+NOTE THAT THIS CODE HAS BEEN COMPILED AS AN OPEN SOURCE PROJECT AND NO ONE CLAIMS OFFICIAL OWNERSHIP
+
+ALL CONTRIBUTORS ARE NOTED VIA THE GITHUB REPO AND SHALL NEVER EXTEND THE VERSION I PROVIDE
+
+This resource is the ESX AdvFuel script for the GTA V mod extension FiveM.
+-Allows state personal to refuel emergency vehicles with no cost to the user since it is charged to the "state"
+-Allows civilians to refuel vehicles/aircraft/boats with the price displayed at the pump
+
+Installation:
+To install this script you must have a functioning version of ESX
+1) Download the resource and install on the server resource folder
+2) Add esx_AdvFuel to the server.cfg
+
+Additional setup:
+- You can add addition emergency vehicles to the model_c.lua under the proper section so your fleet of add-on vehicles work.
+- Your handling.meta for all vehicles can be adjust to increase/decrease fuel range on the line of 'fPetrolTankVolume'. Keep in mind this is handled in liters so always divide by 4 to get it converted to ~gallons
+
+Note that script is in continuous development/deployment so please state noted on changes to come.
+v0.1
+-All major outlines are set, just testing remaining before release version is pushed.
+
+ 

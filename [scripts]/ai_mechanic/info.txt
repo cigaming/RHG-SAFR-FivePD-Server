@@ -1,0 +1,69 @@
+--------------------------------------------------------
+***** Thank you for installing the "AI MECHANIC SCRIPT" 
+***** by Interfere and NickNoobles (KNOBs)
+------------------------------------------------------
+
+ .--[ TABLE OF CONTENTS ]
+|
+|
+|- * - Installation
+|- * - Usage
+|- * - Changelog
+|- * - Credits
+|
+|
+ \
+  [ * ] Installation:
+|
+| 	1. drop the "ai_mechanic" folder into your resources.
+| 	2. add the 'start ai_mechanic' line to your server.cfg file.
+| 	3. Boot up the server and have fun!
+|
+|
+|
+ \
+  [ * ] Usage:
+|
+| 	- This is a standalone script that doesn't require any sort of frameworks (e.g. ESX) or SQL.
+| 	- It's recommended for use on smaller whitelisted servers, since it lacks permissions.
+| 	- Keep in mind that the AI can be unpredictable in multiplayer, so expect to see some bugs!
+|   - For configurations see config.lua
+|
+|	  - In order to call for the Mechanic, you need to either be facing a vehicle or sitting inside of it.
+| 	- The default command for the Mechanic is /mechanic
+|	  - Afterwards you will recieve a confirmation notification as well as a blinking yellow blip on your mini-map.
+|	  - ( If you dont see the yellow blip, try again. ) 
+|	  - Every time you type in /mechanic, your previous request will be cancelled, and the mechanic - removed.
+|
+|
+|
+|
+ \
+  [ * ] Changelog:
+|
+| 	(1.0) - initial release.
+|
+|
+|
+ \
+  [ * ] Credits:
+
+
+  		> Interfere - programming, script design, play testing. - "https://twitter.com/itscallmecallum"
+  		> NickNoobles - supervision, programming, script design. - "https://twitter.com/NickNoobles"
+  		________
+
+  	CHECK OUT OUR *DISCORD* FOR MORE INFORMATION AND SCRIPTS:
+
+  	[*] https://discord.gg/K7P8d2h
+  		________
+
+  	SUBSCRIBE TO OUR *YOUTUBE* CHANNEL:
+
+  	[*] https://www.youtube.com/channel/UCNS3wu7x20qI--v_5kRgoAA
+
+
+  pls no repost thx. https://choosealicense.com/no-permission/
+
+
+

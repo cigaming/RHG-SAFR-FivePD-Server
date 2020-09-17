@@ -1,0 +1,14 @@
+local scenarios = {
+    'WORLD_VEHICLE_AMBULANCE',
+    'WORLD_VEHICLE_MILITARY_PLANES_BIG',
+    'WORLD_VEHICLE_MILITARY_PLANES_SMALL',
+    'WORLD_VEHICLE_POLICE_BIKE',
+    'WORLD_VEHICLE_POLICE_CAR',
+    'WORLD_VEHICLE_POLICE',
+    'WORLD_VEHICLE_POLICE_NEXT_TO_CAR',
+    'WORLD_VEHICLE_SECURITY_CAR',
+}
+  
+for i, v in ipairs(scenarios) do
+    SetScenarioTypeEnabled(v, false)
+end

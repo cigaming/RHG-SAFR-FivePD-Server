@@ -1,0 +1,40 @@
+{
+	"police": [
+		{
+			"name": "Police",
+			"vehicle": "pol1"
+		},
+		{
+			"name": "Police 2",
+			"vehicle": "pol2"
+		},
+		{
+			"name": "Police transporter",
+			"vehicle": "pvan"
+		},
+		{
+			"name": "FBI",
+			"vehicle": "fbi"
+		},
+		{
+			"name": "FBI 2",
+			"vehicle": "fbi2"
+		},
+		{
+			"name": "Sheriff 1",
+			"vehicle": "so1"
+		},
+		{
+			"name": "Sheriff 2",
+			"vehicle": "so2"
+		}
+	],
+	"ambulance": "ambulance",
+	"airAmbulance": "polmav",
+	"firedept": "firetruk",
+	"coroner": "speedo",
+	"towtruck": "flatbed",
+	"mechanic": "utillitruck3",
+	"prisontransport": "pvan",
+	"animalControl": "bison"
+}

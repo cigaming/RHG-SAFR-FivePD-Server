@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script>
+            var dufxPlayer = null;
+            window.addEventListener('message', function(grab) {
+				if (grab.data.CallType == "dufxaudio") {	
+					if(dufxPlayer != null) {
+						dufxPlayer.pause();
+					}
+					dufxPlayer = new Audio("./sounds/" + grab.data.CallFile + ".ogg");
+					dufxPlayer.volume = grab.data.CallVolume;
+					dufxPlayer.play();
+				}
+            });
+        </script>
+    </head>
+</html>

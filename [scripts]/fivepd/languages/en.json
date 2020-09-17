@@ -1,0 +1,197 @@
+{
+    "name":"English",
+    "CalloutMenu":{
+		"title":"Callout Menu",
+		"description":"Choose an option",
+        "backup_menu":{
+            "title":"Backup Menu",
+			"description":"Call for backup",
+			"buttons":{
+				"code1":{
+					"title":"Code 1",
+					"description":"Call for code 1 backup"
+				},
+				"code2":{
+					"title":"Code 2",
+					"description":"Call for code 2 backup"
+				},
+				"code3":{
+					"title":"Code 3",
+					"description":"Call for code 3 backup"
+				},
+				"code99":{
+					"title":"Code 99",
+					"description":"Call for code 99 backup"
+				},
+				"cancel_backup":{
+					"title":"Cancel backup",
+					"description":"Cancel your backup request"
+				}
+			}
+        },
+        "add_nearby":{
+            "title":"Add nearby player",
+            "description":"Add the closest player to your callout (must be in the same department)"
+        },
+        "disable_callouts":{
+            "title":"Disable callouts",
+            "description":"Disable receiving callouts"
+        },
+        "debug_menu":{
+            "title":"~y~Debug menu",
+            "description":"Debug menu",
+            "submenu":{
+                "force_callouts":{
+                    "title":"Force callouts",
+                    "description":"Force a callout"
+                },
+                "toggle_callouts":{
+                    "title":"Enable/Disable callouts",
+                    "description":"Enable/Disable a callout"
+                }
+            }
+		},
+		"code4":{
+			"title":"~y~Code ~g~4",
+            "description":"Complete the callout"
+		},
+		"cancel_assistance":{
+			"title":"~r~Cancel assistance",
+            "description":"Stop responding to the backup request"
+		}
+    },
+	"MainMenu": {
+		"title": "Main menu",
+		"subtitle": "Choose a submenu"
+	},
+    "DutyMenu": {
+		"title": "Duty menu",
+		"subtitle": "Choose an option",
+		"duty": "On duty",
+		"engine": "Keep engine running",
+		"cc": {
+			"title": "Toggle cruise control",
+			"description": "By enabling this option you can use CC by pressing the set keybind for it. Default is 'B'."
+		},
+		"vehicleSpawn": "Spawn vehicle",
+		"loadout": "Get loadout",
+		"refill": "Refill health & armor",
+		"tp": "Teleport to station",
+		"OptionsMenu": {
+			"title": "Options menu",
+			"subtitle": "Choose an option",
+			"lang": "Change language",
+			"blips": "Toggle blips",
+			"patrolCarBlip": "Toggle patrol car blip",
+			"menupos": {
+				"title": "Toggle menu position",
+				"description": "Checked: right~n~Unchecked: left~n~~n~It's not working on aspect ratios 17:9 and 21:9!"
+			}
+		}
+	},
+	"SceneMenu": {
+		"title": "Scene menu",
+		"subtitle": "Choose a submenu",
+		"ObjectMenu": {
+			"title": "Object placement",
+			"subtitle": "Choose an option",
+			"spawn": "Spawn object",
+			"delete": "Delete all objects you've placed",
+			"deletePrevious": "Delete the previous object you've placed"
+		},
+		"SpeedZoneMenu": {
+			"title": "Speedzone placement",
+			"subtitle": "Choose an option",
+			"speed": "Select speed",
+			"radius": "Change radius",
+			"place": "Place speedzone",
+			"remove": "Remove speedzone",
+			"go": "Let vehicles go"
+		}
+	},
+	"DispatchMenu": {
+		"title": "Dispatch menu",
+		"subtitle": "Choose an option",
+		"id": "Check ID",
+		"plate": "Check license plate",
+		"transport": {
+			"request": "Request prison transport",
+			"cancel": "Cancel prison transport"
+		},
+		"ems": {
+			"request": "Request ambulance",
+			"cancel": "Cancel ambulance"
+		},
+		"fd": {
+			"request": "Request fire department",
+			"cancel": "Cancel fire department"
+		},
+		"coroner": {
+			"request": "Request coroner",
+			"cancel": "Cancel coroner"
+		},
+		"towTruck": {
+			"request": "Request tow truck",
+			"cancel": "Cancel tow truck"
+		},
+		"animalControl": {
+			"request": "Request animal control",
+			"cancel": "Cancel animal control"
+		},
+		"mechanic": {
+			"request": "Request mechanic",
+			"cancel": "Cancel mechanic"
+		},
+		"airAmbulance": {
+			"request": "Request air ambulance",
+			"cancel": "Cancel air ambulance"
+		}
+	},
+	"PedVehicleMenu": {
+		"title": "Ped seat menu",
+		"subtitle": "Choose an option",
+		"left": "Left rear put into/order out",
+		"right": "Right rear put into/order out"
+	},
+	"TrafficStopMenu": {
+		"title": "Traffic stop menu",
+		"subtitle": "Choose an option",
+		"id": "Ask for ID",
+		"go": "Free to go",
+		"breathalyzer": "Breathalyzer test",
+		"drugswab": "Drugswab test",
+		"orderOut": {
+			"title": "Order out of vehicle",
+			"occupants": ["All", "Driver", "Front right", "Back left", "Back right"]
+		}
+	},
+	"TrafficStopPositionMenu": {
+		"title": "Traffic stop position",
+		"subtitle": "Choose an option",
+		"follow": "Enable follow",
+		"mimic": "Enable mimic",
+		"marker": "Enable go to marker",
+		"cancel": "Cancel positioning"
+	},
+	"PedCheckMenu": {
+		"title": "Ped stop menu",
+		"subtitle": "Choose an option",
+		"id": "Ask for ID",
+		"breathalyzer": "Breathalyzer test",
+		"drugswab": "Drugswab test",
+		"move": {
+			"title": "Move ped",
+			"types": ["Follow me", "Grab ped"]
+		},
+		"search": {
+			"title": "Search",
+			"types": ["Ped", "Vehicle"]
+		},
+		"cancelMove": {
+			"title": "Cancel move",
+			"description": "Cancel following or grabbing."
+		},
+		"cuff": "Cuff/uncuff ped",
+		"dismiss": "Dismiss ped"
+	}
+}

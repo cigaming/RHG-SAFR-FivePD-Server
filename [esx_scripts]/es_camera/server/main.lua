@@ -1,0 +1,60 @@
+local Spectating = {}
+
+RegisterServerEvent('es_camera:requestSpectating')
+AddEventHandler('es_camera:requestSpectating', function()
+	TriggerClientEvent('es_camera:onSpectate', source, Spectating)
+end)
+
+TriggerEvent('es:addGroupCommand', 'spectate', "admin", function(source, args, user)
+	
+	local target = -1
+
+	if args[1] ~= nil then
+		target = tonumber(args[1])
+	end
+
+	if target == -1 then
+
+		for i=1, #Spectating, 1 do
+			if Spectating[i] == source then
+				Spectating[i] = nil
+				break
+			end
+		end
+
+		TriggerClientEvent('es_camera:onSpectate', -1, Spectating)
+		TriggerClientEvent('es_camera:spectate', source, target)
+
+	elseif target == source then
+		TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "You cannot spectate yourself!")
+	else
+
+		local found = false
+
+		for i=1, #Spectating, 1 do
+			if Spectating[i] == source then
+				found = true
+				break
+			end
+		end
+
+		if not found then
+			table.insert(Spectating, source)
+		end
+
+		TriggerClientEvent('es_camera:onSpectate', -1, Spectating)
+		TriggerClientEvent('es_camera:spectate', source, target)
+	end
+
+end, function(source, args, user)
+	TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Insufficient permissions!")
+end, {help = 'Spectate', params = {{name = 'id'}}})
+
+AddEventHandler('playerDropped', function()
+	for i=1, #Spectating, 1 do
+		if Spectating[i] == source then
+			Spectating[i] = nil
+			break
+		end
+	end
+end)

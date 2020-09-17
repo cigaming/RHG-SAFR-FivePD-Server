@@ -1,0 +1,153 @@
+{
+  "ActiveShooter": {
+    "IgnoreDistance": true,
+    "MinTimeout": 0,
+    "Probability": 1,
+    "Departments": null
+  },
+  "ArmedRobbery": {
+    "IgnoreDistance": true,
+    "MinTimeout": 0,
+    "Probability": 1,
+    "Departments": null
+  },
+  "AttemptedKidnapping": {
+    "IgnoreDistance": true,
+    "MinTimeout": 0,
+    "Probability": 0,
+    "Departments": null
+  },
+  "BenchWarrant": {
+    "IgnoreDistance": true,
+    "MinTimeout": 0,
+    "Probability": 1,
+    "Departments": null
+  },
+  "BicycleOnHighway": {
+    "IgnoreDistance": true,
+    "MinTimeout": 0,
+    "Probability": 1,
+    "Departments": null
+  },
+  "BusinessBurglary": {
+    "IgnoreDistance": true,
+    "MinTimeout": 0,
+    "Probability": 1,
+    "Departments": null
+  },
+  "EMSAssistance": {
+    "IgnoreDistance": true,
+    "MinTimeout": 0,
+    "Probability": 1,
+    "Departments": null
+  },
+  "HouseBurglary": {
+    "IgnoreDistance": true,
+    "MinTimeout": 0,
+    "Probability": 1,
+    "Departments": null
+  },
+  "HumanTrafficking": {
+    "IgnoreDistance": true,
+    "MinTimeout": 0,
+    "Probability": 1,
+    "Departments": null
+  },
+  "Main": { // Shots fired call
+    "IgnoreDistance": true,
+    "MinTimeout": 0,
+    "Probability": 1,
+    "Departments": null
+  },
+  "MoneyTruckPursuit": {
+    "IgnoreDistance": true,
+    "MinTimeout": 0,
+    "Probability": 0,
+    "Departments": null
+  },
+  "NeighborDispute": {
+    "IgnoreDistance": true,
+    "MinTimeout": 0,
+    "Probability": 0,
+    "Departments": null
+  },
+  "PedestrianOnHighway": {
+    "IgnoreDistance": true,
+    "MinTimeout": 0,
+    "Probability": 0,
+    "Departments": null
+  },
+  "PersonWithKnife": {
+    "IgnoreDistance": true,
+    "MinTimeout": 0,
+    "Probability": 1,
+    "Departments": null
+  },
+  "PoliceImpersonator": {
+    "IgnoreDistance": true,
+    "MinTimeout": 0,
+    "Probability": 1,
+    "Departments": null
+  },
+  "Pursuit": {
+    "IgnoreDistance": true,
+    "MinTimeout": 0,
+    "Probability": 1,
+    "Departments": null
+  },
+  "SemiPursuit": {
+    "IgnoreDistance": true,
+    "MinTimeout": 0,
+    "Probability": 1,
+    "Departments": null
+  },
+  "Solicitation": {
+    "IgnoreDistance": true,
+    "MinTimeout": 0,
+    "Probability": 1,
+    "Departments": null
+  },
+  "SportsBikePursuit": {
+    "IgnoreDistance": true,
+    "MinTimeout": 0,
+    "Probability": 1,
+    "Departments": null
+  },
+  "StolenPrisonBus": {
+    "IgnoreDistance": true,
+    "MinTimeout": 0,
+    "Probability": 0,
+    "Departments": null
+  },
+  "StoreHoldup": {
+    "IgnoreDistance": true,
+    "MinTimeout": 0,
+    "Probability": 1,
+    "Departments": null
+  },
+  "StreetRacing": {
+    "IgnoreDistance": true,
+    "MinTimeout": 0,
+    "Probability": 1,
+    "Departments": null
+  },
+  "TrafficAccident": {
+    "IgnoreDistance": true,
+    "MinTimeout": 0,
+    "Probability": 1,
+    "Departments": null
+  },
+  "VehicleBOLO": {
+    "IgnoreDistance": true,
+    "MinTimeout": 0,
+    "Probability": 1,
+    "Departments": null
+  },
+  "VehicleBurglary": {
+    "IgnoreDistance": true,
+    "MinTimeout": 0,
+    "Probability": 1,
+    "Departments": null
+  }
+
+}

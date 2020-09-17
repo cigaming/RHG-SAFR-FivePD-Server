@@ -1,0 +1,42 @@
+{
+	"Loadout 1": [
+		{
+			"weapon": "WEAPON_COMBATPISTOL",
+			"components": [
+				"COMPONENT_COMBATPISTOL_CLIP_01",
+				"COMPONENT_AT_PI_FLSH"
+			],
+			"ammo": 250
+		},
+		{
+			"weapon": "WEAPON_STUNGUN",
+			"ammo": 250
+		},
+		{
+			"weapon": "WEAPON_NIGHTSTICK",
+			"ammo": 250
+		},
+		{
+			"weapon": "WEAPON_FIREEXTINGUISHER",
+			"ammo": 1000
+		}
+	],
+	"Loadout 2": [
+		{
+			"weapon": "WEAPON_CARBINERIFLE",
+			"components": [
+				"COMPONENT_AT_AR_AFGRIP",
+				"COMPONENT_AT_AR_SUPP",
+				"COMPONENT_AT_AR_FLSH",
+				"COMPONENT_CARBINERIFLE_CLIP_02"
+			],
+			"ammo": 250
+		}
+	],
+	"Loadout 3": [
+		{
+			"weapon": "WEAPON_MARKSMANRIFLE",
+			"ammo": 250
+		}
+	]
+}

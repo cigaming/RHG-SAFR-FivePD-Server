@@ -1,0 +1,27 @@
+[
+  {
+    "id": 0,
+    "title": "WAZEL NEW AÇILDI!!!! Dneme adasdjakshd",
+    "writer": "Gürkan Selim ALBAYRAK",
+    "hour": "12:00",
+    "picture": "https://pbs.twimg.com/profile_images/702982240184107008/tUKxvkcs_400x400.jpg",
+    "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "id": 1,
+    "title": "bar",
+    "writer": "var",
+    "hour": "12:00",
+    "picture": "https://pbs.twimg.com/profile_images/702982240184107008/tUKxvkcs_400x400.jpg",
+    "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+  },
+  {
+    "id": 2,
+    "title": "qux",
+    "writer": "var",
+    "hour": "12:00",
+    "picture": "https://pbs.twimg.com/profile_images/702982240184107008/tUKxvkcs_400x400.jpg",
+    "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "database": {
+    "username": "fivepd",
+    "password": "RHG2015",
+    "host": "10.1.10.207",
+    "port": 3306,
+    "database": "fivepd"
+  },
+  "callouts": {
+    "MinimumTimeBeforeCall": 45,
+    "MaximumTimeBeforeCall": 180,
+    "CalloutExpirationTime": 30,
+    "CalloutChance": 65
+  },
+  "MaximumReportLength": 5000,
+  "MaximumFineAmount": 1000000,
+  "MaximumFineAmountPoint": 100,
+  "MaximumCallLength": 125,
+  "MaximumOfficerNameLength": 125,
+  "MaximumAINameLength": 50,
+  "MaximumNumberOfInvolvedOfficers": 64,
+  "MaximumNumberOfSuspects": 64,
+  "MaximumNumberOfVictims": 64,
+  "MaximumViolationCount": 64,
+  "IsSignatureEnabled": true,
+  "MaximumSignatureSize": 10.0,
+  "MaximumStreetNameLength": 25,
+  "MaximumCityNameLength": 30,
+  "MaximumZIPLength": 10,
+  "MaximumChargeCount": 100,
+  "MaximumReportCount": 500,
+  "MaximumCitationCount": 500,
+  "MinimumCallsignLength": 1,
+  "MaximumCallsignLength": 15,
+  "DisableCode99": false,
+  "AdminCode": "RHG2015",
+  "Discord": {
+    "enable": false,
+    "token": "<token>"
+  },
+  "Allowlist": false
+}

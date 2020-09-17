@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				window.addEventListener('message', function(event){
+					var content
+
+					if (event.data.color == 1) {
+						content = $('<div class="notification-bg" style="display: none;">' + event.data.text + '</div>')
+					} else if (event.data.color == 2) {
+						content = $('<div class="notification-bg red" style="display: none;">' + event.data.text + '</div>')
+					} else if (event.data.color == 3) {
+						content = $('<div class="notification-bg green" style="display: none;">' + event.data.text + '</div>')
+					}
+
+					$('.notify-wrap').prepend(content)
+					$(content).fadeIn(500)
+
+					setTimeout(function(){
+						$(content).fadeOut(event.data.time * 0.25)
+					}, event.data.time * 0.75)
+
+					setTimeout(function(){
+						$(content).css('display', 'none')
+					}, event.data.time)
+				})
+			})
+		</script>
+		<style>
+			* {
+				font-family: 'Lato', sans-serif;
+				margin: 0;
+				padding: 0;
+				text-shadow: 0px 0px 0px black;
+			}
+
+			.div-wrap {
+				display: block;
+				margin-left: 62%;
+				width: 30%;
+				height: 15%;
+				margin-top: 1%;
+				color: white;
+				padding: 1px;
+			}
+
+			.notify-wrap {
+				height: 99%;
+				overflow: hidden;
+				position: relative;
+			}
+
+			.notification-bg {
+				background-color: rgba(51, 112, 165, 0.85);
+				color: #fff;
+				margin: 6px;
+				text-align: center;
+				padding: 8px;
+				border-radius: 3px;
+				font-weight: bold;
+				font-size: 12px;
+				display: inline-block;
+			}
+
+			.red {
+				background-color: rgba(181, 82, 85, 0.85);
+			}
+
+			.green {
+			    background-color: rgba(21, 100, 15, 0.95);        
+            }
+		</style>
+	</head>
+	<body>
+		<div class="div-wrap">
+			<div class="notify-wrap"></div>
+		</div>
+	</body>
+</html>

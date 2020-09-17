@@ -1,0 +1,93 @@
+{
+    "violations":{
+        "Public":[
+            "Public Intoxication",
+            "Jaywalking",
+            "Trespassing",
+            "Loitering",
+            "Fighting",
+            "Disturbing the peace"
+        ],
+        "Documentation":[
+            "Expired Driver`s license",
+            "Expired Registration",
+            "Expired Insurance",
+            "Invalid Driver`s license",
+            "Invalid Registration",
+            "Invalid Insurance"
+        ],
+        "Traffic Violations":[
+            "Speeding (+5-15 mph)",
+            "Speeding (+16-25 mph)",
+            "Speeding(+25+ mph)",
+            "Leaving the scene of an accident",
+            "Reckless driving",
+            "Running a red light",
+            "Running a stop sign",
+            "Distracted driving",
+            "Unlawful vehicle modification",
+            "Seat belt violation",
+            "Failure to yield",
+            "Improper turn",
+            "Improper passing",
+            "Improper lane change"
+        ]
+    },
+    "charges":{
+        "Posession":[
+            "Posession of Marijuana",
+            "Posession of Cocaine",
+            "Posession of Narcotics",
+            "Posession of a Stolen Vehicle",
+            "Posession of a Stolen Firearm",
+            "Posession of Counterfeit Money",
+            "Illegal Posession of Firearms"
+        ],
+        "Assault":[
+            "Aggravated Assault/Battery",
+            "First Degree Murder",
+            "Second Degree Murder",
+            "Third Degree Murder",
+            "Assault with a Deadly Weapon",
+            "Hostage Taking",
+            "Drive-by Shooting",
+            "Assasination",
+            "Armed Robbery",
+            "Arson"
+        ],
+        "Domestic Violence":[
+            "Aggravated Identity Theft",
+            "Attempting to commit Murder/Manslaughter",
+            "Bankruptcy Fraud",
+            "Bank Robbery",
+            "Breaking and Entering",
+            "Computer Crime",
+            "Concealing Escaped Prisoner",
+            "Concealing Person from Arrest",
+            "Conspiracy",
+            "Credit/Debit Card Fraud",
+            "Domestic Terrorism",
+            "Domestic Violence"
+        ],
+        "Drug and Alcohol Related":[
+            "Drug Abuse",
+            "Drug Smuggling",
+            "Drug Trafficking",
+            "DUI"
+        ],
+        "?":[
+            "Money Laundering",
+            "Motor Vehicle Theft",
+            "Prostitution",
+            "Rape",
+            "Sabotage",
+            "Sexual Assault",
+            "Shoplifting",
+            "Trespassing",
+            "Vandalism",
+            "Use of Firearm",
+            "Resisting Arrest",
+			"Out Standing Warrant"
+        ]
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "Officer I":{
+        "xp":0
+    },
+    "Officer II":{
+        "xp":1000,
+        "promoteOnly":false,
+        "canPromote":true
+    },
+    "Officer III":{
+        "xp":3000,
+        "promoteOnly":false,
+        "canPromote":true
+    },
+    "Detective I":{
+        "xp":10000,
+        "promoteOnly":false,
+        "canPromote":true
+    },
+    "Detective II":{
+        "xp":15000,
+        "promoteOnly":false,
+        "canPromote":true
+    },
+    "Detective III":{
+        "xp":20000,
+        "promoteOnly":false,
+        "canPromote":true
+    },
+    "Sergeant I":{
+        "xp":25000,
+        "promoteOnly":false,
+        "canPromote":true
+    },
+    "Sergeant II":{
+        "xp":30000,
+        "promoteOnly":false,
+        "canPromote":true
+    },
+    "Lieutenant I":{
+        "xp":35000,
+        "promoteOnly":false,
+        "canPromote":true
+    },
+    "Lieutenant II":{
+        "xp":40000,
+        "promoteOnly":false,
+        "canPromote":true
+    },
+    "Captain I":{
+        "xp":45000,
+        "promoteOnly":false,
+        "canPromote":true
+    },
+    "Captain II":{
+        "xp":50000,
+        "promoteOnly":true,
+        "canPromote":true
+    },
+    "Captain III":{
+        "xp":55000,
+        "promoteOnly":false,
+        "canPromote":true
+    },
+    "Commander":{
+        "xp":60000,
+        "promoteOnly":false,
+        "canPromote":true
+    },
+    "Chief":{
+        "xp":100000,
+        "promoteOnly":true,
+        "canPromote":true
+    }
+}

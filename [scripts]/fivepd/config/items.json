@@ -1,0 +1,62 @@
+[
+	{
+		"name": "pen",
+		"isIllegal": false,
+		"multiplier": 10,
+		"itemLocation": 2
+	},
+	{
+		"name": "phone",
+		"isIllegal": false,
+		"multiplier": 20,
+		"itemLocation": 1
+	},
+	{
+		"name": "notebook",
+		"isIllegal": false,
+		"multiplier": 5,
+		"itemLocation": 0
+	},
+	{
+		"name": "marijuana",
+		"isIllegal": true,
+		"multiplier": 1,
+		"itemLocation": 2
+	},
+	{
+		"name": "watch",
+		"isIllegal": false,
+		"multiplier": 20,
+		"itemLocation": 1
+	},
+	{
+		"name": "ID card",
+		"isIllegal": false,
+		"multiplier": 20,
+		"itemLocation": 1
+	},
+	{
+		"name": "wallet",
+		"isIllegal": false,
+		"multiplier": 10,
+		"itemLocation": 2
+	},
+	{
+		"name": "headphones",
+		"isIllegal": false,
+		"multiplier": 5,
+		"itemLocation": 2
+	},
+	{
+		"name": "keys",
+		"isIllegal": false,
+		"multiplier": 5,
+		"itemLocation": 2
+	},
+	{
+		"name": "knife",
+		"isIllegal": true,
+		"multiplier": 2,
+		"itemLocation": 2
+	}
+]

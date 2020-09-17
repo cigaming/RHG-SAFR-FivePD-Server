@@ -1,0 +1,186 @@
+<script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+
+</script>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>-->
+
+    <title>Esx police-cad</title>
+</head>
+<body>
+    <div class="police-cad-main-wrapper" id="police-cad">
+
+        <div class="police-cad-inner-wrapper">
+            <div class="police-cad-header">
+                <h4>Police cad</h4>
+                <div class="police-cad-close">
+                    <i class="far fa-window-close"></i>
+                </div>
+            </div>
+            <div class="police-cad-inner-main">
+                <div class="police-cad-left-sidebar">
+                    <ul class="police-cad-menu">
+                        <li data-id="plate-checker" class="active">Plate checker</li>
+                        <li data-id="search-civilian">Civilian Search</li>
+                    </ul>
+                    <img  src="images/LSPD_logo_GTA_V.png" class="police-logo"  style="margin-left: -23px;">
+                </div>
+                <div class="page-wrapper">
+                    <div id="plate-checker" class="police-cad-content-right police-cad-system-search-plate page">
+                        <table class="police-cad-listings">
+                            <thead>
+                                <tr>
+                                    <td>Plate</td>
+                                    <td>Modal name</td>
+                                    <td>first name</td>
+                                    <td>Last name</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="plate"></td>
+                                    <td id="model"></td>
+                                    <td id="firstname"></td>
+                                    <td id="lastname"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="plate-input-box">
+                            <div class="row">
+                                <label class="col-md-12">Insert plate</label>
+                            </div>
+                            <input type="text" id="input-plate" class="input" name="plate-input">
+                        </div>
+                        <footer>
+                            <button type="submit" id="search-for-plate" class="search-button">Search car plate</button>
+                        </footer>
+                    </div>
+                    <div id="search-civilian" class="police-cad-content-right police-cad-system-search-civilian page" style="overflow-y: auto">
+                        <div class="container">
+                            <div class="resultinner">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label>Search player</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input class="form-control" type="text" id="search">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="submit" id="search-for-civilian" class="search-civilian-button btn btn-primary" style="width: 100%;">Search</button>
+                                    </div>
+                                </div>
+                                <table class="all-found-users">
+                                    <thead>
+                                        <tr>
+                                            <td>Firstname</td>
+                                            <td>Lastname</td>
+                                            <td>Sex</td>
+                                            <td>Date of birth</td>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+
+                            <div class="civilian-details">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <button type="submit" class="civ-back btn btn-primary">Back</button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button type="submit" class="add-cr pull-right btn btn-primary">Add criminal record</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 firstname-label"></div>
+                                    <div class="col-md-6 firstname inputfield"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 lastname-label"></div>
+                                    <div class="col-md-6 lastname inputfield"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 sex-label"></div>
+                                    <div class="col-md-6 sex inputfield"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 dob-label"></div>
+                                    <div class="col-md-6 dob inputfield"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 height-label"></div>
+                                    <div class="col-md-6 height inputfield"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 phone-label"></div>
+                                    <div class="col-md-6 phone inputfield"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 job-label"></div>
+                                    <div class="col-md-6 job inputfield"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 jail-label"></div>
+                                    <div class="col-md-6 jail inputfield"></div>
+                                </div>
+                                <div class="row" style="padding-top:20px;">
+                                    <div class="col-md-6">
+                                        <div class="col-md-12">
+                                            <div class="modal-add-record">
+                                                <span class="error-cr"></span>
+                                                <input type="hidden" id="cr-playerid" name="playerid" value="">
+                                                <input type="text" placeholder="Offence" id="cr-offence" name="offence" class="form-control">
+                                                <label><input type="checkbox" name="jail" id="cr-jail" value="1"> Jail time?</label>
+                                                <button class="btn btn-primary" id="save-criminal-record" style="width: 100%;">Save</button>
+                                            </div>
+                                            <h3>Criminal Records</h3>
+                                            <table id="criminal-records" class="criminal-records">
+                                                <thead>
+                                                    <tr>
+                                                        <td>Offence</td>
+                                                        <td>Jail time?</td>
+                                                        <td>Created at</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="col-md-12">
+                                            <h3>Owned licenses</h3>
+                                            <table id="licenses" class="criminal-records">
+                                                <thead>
+                                                    <tr>
+                                                        <td>License type</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

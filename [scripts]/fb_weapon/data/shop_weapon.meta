@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<WeaponShopItemArray>
+	<weaponShopItems>
+		<Item>
+			<lockHash>CU_WEP_FLASHBANG</lockHash>
+			<nameHash>WEAPON_FLASHBANG</nameHash>
+			<cost value ="10000"/>
+			<ammoCost value="100"/>
+			<textLabel>WT_FLASHBANG</textLabel>
+			<weaponDesc>WTD_FLASHBANG</weaponDesc>
+			<weaponTT>WTT_FLASHBANG</weaponTT>
+			<weaponUppercase>WTU_FLASHBANG</weaponUppercase>
+			<id value = "32"/>
+			<weaponComponents />
+		</Item>
+	</weaponShopItems>
+</WeaponShopItemArray>	

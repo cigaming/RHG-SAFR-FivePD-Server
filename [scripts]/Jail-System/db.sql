@@ -1,0 +1,3 @@
+ALTER TABLE `users`
+
+  ADD COLUMN `jailitems` LONGTEXT NULL;
